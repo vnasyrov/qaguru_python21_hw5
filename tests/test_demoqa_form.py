@@ -84,7 +84,6 @@ def test_demoqa_form():
     browser.element('#submit').click()
     browser.element('.table-responsive').should(be.visible)
     browser.element('#example-modal-sizes-title-lg').should(have.exact_text('Thanks for submitting the form'))
-
     browser.all('.table-responsive td:nth-child(2)').should(have.exact_texts(
 
         'Valeriy Nasyrov',
