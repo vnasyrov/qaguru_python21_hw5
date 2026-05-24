@@ -1,11 +1,3 @@
-```python
-from selene import browser, have, be, command
-from selenium import webdriver
-from pathlib import Path
-from datetime import datetime
-import os
-```
-
 # Указать браузер по имени
 ```python
 from selene import browser
