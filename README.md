@@ -1,3 +1,4 @@
+```python
 from selene import browser, have, be, command
 from selenium import webdriver
 from pathlib import Path
@@ -288,3 +289,4 @@ browser.element('#dateOfBirthInput').should(have.value('12 Jul 1993'))  # ✅ п
 today = datetime.today().strftime('%d %B %Y')
 browser.element('#dateOfBirthInput').set_value(today)                   # вводим
 browser.element('#dateOfBirthInput').should(have.value(today))          # проверяем то же самое значение
+```
